@@ -100,7 +100,7 @@ const sumMultiples = (num, divisor) => {
   return sum;
 };
 
-//no.15 sum of Drugs
+//no.15 sum of  Digits
 const sumDigits = (num) => {
   if (num === 0) {
     return 0;
