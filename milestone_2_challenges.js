@@ -41,4 +41,9 @@ function findLongestWord(wordlist) {
   return longestWord;
 }
 
-console.log(findLongestWord(["data", "banana"]));
+// challenge 5  count properties
+
+const countProperties = (object) => Object.keys(object).length;
+
+console.log(countProperties({ name: "Alice", age: 34, city: "Paris" }));
+// console.log({ name: "Alice", age: 34, city: "Paris" }.keys);
