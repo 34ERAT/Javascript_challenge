@@ -54,3 +54,14 @@ function filterByLength(wordlist, num) {
   }
   return newWordlist;
 }
+
+//challenge 7 sum of Even numbers
+
+function sumEvenNumber(array) {
+  let sum = 0;
+  for (i in array) {
+    if (array[i] % 2 == 0) sum += array[i];
+  }
+  return sum;
+}
+console.log(sumEvenNumber([1, 2, 3, 4, 5, 6]));
