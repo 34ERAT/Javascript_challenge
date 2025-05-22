@@ -21,6 +21,7 @@ function findMax(array) {
 }
 
 //challenge 3 Election winner
+
 function findWinner(candidates) {
   let winner = candidates[0];
   for (k in candidates) {
@@ -28,9 +29,16 @@ function findWinner(candidates) {
   }
   return winner;
 }
-const candidates = [
-  { name: "Alice", votes: 50 },
-  { name: "Bob", votes: 75 },
-  { name: "Charile", votes: 65 },
-];
-console.log(findWinner(candidates));
+
+//challenge 4 Longest word
+
+function findLongestWord(wordlist) {
+  let longestWord = wordlist[0];
+
+  for (i in wordlist) {
+    if (wordlist[i].length > longestWord.length) longestWord = wordlist[i];
+  }
+  return longestWord;
+}
+
+console.log(findLongestWord(["data", "banana"]));
