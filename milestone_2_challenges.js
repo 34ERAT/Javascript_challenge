@@ -20,4 +20,17 @@ function findMax(array) {
   return max;
 }
 
-console.log(findMax([3, 7, 2, 9, 5]));
+//challenge 3 Election winner
+function findWinner(candidates) {
+  let winner = candidates[0];
+  for (k in candidates) {
+    if (candidates[k].votes > winner.votes) winner = candidates[k];
+  }
+  return winner;
+}
+const candidates = [
+  { name: "Alice", votes: 50 },
+  { name: "Bob", votes: 75 },
+  { name: "Charile", votes: 65 },
+];
+console.log(findWinner(candidates));
