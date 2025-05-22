@@ -64,8 +64,17 @@ function sumEvenNumber(array) {
   }
   return sum;
 }
+// challenge 8  Difference Between sum of even and Odd numbers
 
-// challenge 8 count Truty
+function differenceEvenOdd(numarray) {
+  let sumeven = 0,
+    sumOdd = 0;
+  for (i in numarray)
+    numarray[i] % 2 == 0 ? (sumeven += numarray[i]) : (sumOdd += numarray[i]);
+  return sumeven - sumOdd;
+}
+
+// challenge 9 count Truthy
 
 function countTruthy(object) {
   let count = 0;
