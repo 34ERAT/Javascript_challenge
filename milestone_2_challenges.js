@@ -64,4 +64,11 @@ function sumEvenNumber(array) {
   }
   return sum;
 }
-console.log(sumEvenNumber([1, 2, 3, 4, 5, 6]));
+
+// challenge 8 count Truty
+
+function countTruthy(object) {
+  let count = 0;
+  for (key in object) if (object[key]) count++;
+  return count;
+}
