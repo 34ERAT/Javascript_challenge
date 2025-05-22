@@ -81,3 +81,12 @@ function countTruthy(object) {
   for (key in object) if (object[key]) count++;
   return count;
 }
+
+// challenge 10 Average of numbers
+
+function average(numarray) {
+  if (numarray.length === 0) return 0;
+  let sum = 0;
+  for (k in numarray) sum += numarray[k];
+  return sum / numarray.length;
+}
