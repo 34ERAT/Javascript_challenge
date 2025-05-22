@@ -45,5 +45,12 @@ function findLongestWord(wordlist) {
 
 const countProperties = (object) => Object.keys(object).length;
 
-console.log(countProperties({ name: "Alice", age: 34, city: "Paris" }));
-// console.log({ name: "Alice", age: 34, city: "Paris" }.keys);
+//challenge 6 Filter by length
+
+function filterByLength(wordlist, num) {
+  let newWordlist = [];
+  for (i in wordlist) {
+    if (wordlist[i].length >= num) newWordlist.push(wordlist[i]);
+  }
+  return newWordlist;
+}
