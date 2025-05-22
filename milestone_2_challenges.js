@@ -90,3 +90,63 @@ function average(numarray) {
   for (k in numarray) sum += numarray[k];
   return sum / numarray.length;
 }
+
+//challenge 11 linear search
+function linearSearch(array, num) {
+  for (k in array) {
+    if (array[k] === num) return k;
+  }
+}
+
+//challange 12 Reverser search
+const reverseLinearSearch = (array, num) => {
+  let lastindex = -1;
+  for (k in array) {
+    if (array[k] === num) lastindex = k;
+  }
+  return lastindex;
+};
+
+//challenge 13 linearSearch all
+function linearSearchAll(array, num) {
+  let indexs = [];
+  for (k in array) {
+    if (array[k] === num) indexs.push(k);
+  }
+  return indexs;
+}
+
+//challange 14 count occurrences
+function countOccurrences(array) {
+  let occurrences = {};
+  array.forEach((element) => {
+    if (element in occurrences) {
+      occurrences[element] += 1;
+      return;
+    }
+
+    occurrences[element] = 1;
+  });
+  return occurrences;
+}
+
+// challenge 15 Remove Dulicate
+const removeDuplicate = (num) => [...new Set(num)];
+
+//challenge 16 MostFrequent
+
+function mostFrequent(list) {
+  let mostFrequent = list[0];
+  let dataFrequency = {};
+  list.forEach((element) => {
+    if (element in dataFrequency) {
+      dataFrequency[element] += 1;
+      return;
+    }
+    dataFrequency[element] = 1;
+  });
+  for (k in dataFrequency) {
+    if (dataFrequency[k] > mostFrequent) mostFrequent = dataFrequency[k];
+  }
+  return mostFrequent;
+}
